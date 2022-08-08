@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    font-family: 'Source Code Pro', sans-serif;
+    /* color: var(--text-black); */
+    /* font-size: 1.1em; */
+}
+body {
+    background: radial-gradient(circle farthest-corner at center center,#B5FFFC,#FFDEE9);
+    height: 100vh;
+    text-align: center;
+
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button {
+    background-color: rgb(5, 5, 5);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+    align-content: center;
+}
+
+button:hover {
+    background: white;
+    border: 5px solid rgb(230, 173, 225);
+    color: rgb(232, 183, 92);
+}
+
+.dice {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin: 0px;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite alternate;
+    
+    
+}
+@keyframes spin {70% {
+        transform: rotateX(90deg) rotateY(360deg) translateZ(0px);
+    }
+}
+.side {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity: .8;
+    background: white;
+    transition: .5s;
+}
+
+.dice:hover>.side {
+    border-radius: 70%;
+}
+
+.one {
+    transform: rotateX(90deg) translateZ(100px);
+    background: black;
+}
+
+.two {
+    transform: translateZ(100px);
+    background: black;
+}
+
+.three {
+    transform: rotateY(90deg) translateZ(100px);
+    background: black;
+}
+
+.four {
+    transform: rotateY(180deg) translateZ(100px);
+    background: black;
+}
+
+.five {
+    transform: rotateY(-90deg) translateZ(100px);
+    background: black;
+}
+
+.six {
+    transform: rotateX(-90deg) translateZ(100px);
+    background: black;
+}
