@@ -27,7 +27,9 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
-Copyright Samiyanur Islam
+
+
+Copyright [Samiyanur Islam]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
