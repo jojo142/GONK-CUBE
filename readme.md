@@ -1,5 +1,5 @@
 # GONK CUBE 
-Hi Gonk Cube is my creative three.js project.
+Hi Gonk Cube is my creative three.js project. All thanks to Three.js journey and Bruno Simon.
 
 Hover over the cube to see something interesting!!
 
